@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body onload="newQuote()">
+<div id="quoteDisplay"></div>
+
+<script>
+	var quotes = [
+	'“If I cannot be better than them, I will become so much worse.” -The Cruel Prince',
+	'“Most of all, I hate you because I think of you. Often. It\'s disgusting, and I can\'t stop.” -The Cruel Prince',
+	'“Have I told you how hideous you look tonight?” Cardan asks, leaning back in the elaborately carved chair, the warmth of his words turning the question into something like a compliment.\
+		“No” I say, glad to be annoyed back into the present.\
+		“Tell me.”\
+		"I can\'t.” -The Cruel Prince'
+	]
+	function newQuote() {
+		var randomNumber = Math.floor(Math.random() * (quotes.length));
+		document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+	}
+</script>
+</body>
+</html>
